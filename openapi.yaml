@@ -1,3 +1,4 @@
+```yaml
 openapi: 3.0.3
 info:
   title: CollabNote API
@@ -5,17 +6,19 @@ info:
     Comprehensive API documentation for the CollabNote application, an intuitive collaborative notes platform.
   version: 1.0.0
   contact:
-    name: Son Nguyen
-    url: https://github.com/hoangsonww
-    email: hoangson091104@gmail.com
+    name: Umair Ansari
+    url: https://github.com/careers-umair-dev
+    email: careers.umair@gmail.com
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
+
 servers:
   - url: http://localhost:4000
     description: Development server
   - url: https://collabnote-fullstack-app.onrender.com
     description: Production server
+
 tags:
   - name: Auth
     description: Authentication-related endpoints
@@ -23,6 +26,7 @@ tags:
     description: Endpoints related to creating, managing, and sharing notes
   - name: Profile
     description: Endpoints for user profiles
+
 paths:
   /auth/register:
     post:
@@ -51,6 +55,7 @@ paths:
           description: User successfully registered
         '400':
           description: Bad request
+
   /auth/login:
     post:
       tags:
@@ -75,6 +80,7 @@ paths:
           description: User successfully logged in
         '401':
           description: Invalid credentials
+
   /auth/check-email-exists:
     post:
       tags:
@@ -96,6 +102,7 @@ paths:
           description: Email check completed
         '400':
           description: Bad request
+
   /auth/reset-password:
     post:
       tags:
@@ -123,6 +130,7 @@ paths:
           description: Password successfully reset
         '400':
           description: Bad request
+
   /notes:
     get:
       tags:
@@ -144,6 +152,7 @@ paths:
           description: List of user notes retrieved successfully
         '401':
           description: Unauthorized access
+
     post:
       tags:
         - Notes
@@ -179,6 +188,7 @@ paths:
           description: Note created successfully
         '400':
           description: Invalid input
+
   /notes/{id}:
     patch:
       tags:
@@ -203,6 +213,7 @@ paths:
           description: Note updated successfully
         '404':
           description: Note not found
+
     delete:
       tags:
         - Notes
@@ -219,6 +230,7 @@ paths:
           description: Note deleted successfully
         '404':
           description: Note not found
+
   /notes/{id}/share:
     post:
       tags:
@@ -247,6 +259,7 @@ paths:
           description: Note shared successfully
         '404':
           description: Note or user not found
+
   /notes/reorder:
     post:
       tags:
@@ -270,6 +283,7 @@ paths:
           description: Notes reordered successfully
         '400':
           description: Invalid input
+
   /profile/me:
     get:
       tags:
@@ -280,6 +294,7 @@ paths:
           description: Profile retrieved successfully
         '401':
           description: Unauthorized access
+
   /profile/userId/{id}:
     get:
       tags:
@@ -297,6 +312,7 @@ paths:
           description: Profile retrieved successfully
         '404':
           description: User not found
+
   /profile/search:
     get:
       tags:
@@ -311,3 +327,4 @@ paths:
       responses:
         '200':
           description: Search results returned successfully
+```

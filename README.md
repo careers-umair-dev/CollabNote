@@ -1,112 +1,126 @@
 # CollabNote - A NestJS, React, Vite, and Supabase Fullstack Notetaking App
 
-[![NestJS](https://img.shields.io/badge/NestJS-v11.0.0-E0234E?style=for-the-badge&logo=nestjs)](https://nestjs.com/)
-[![React](https://img.shields.io/badge/React-v17.0.2-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-v6.0.5-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-[![Supabase](https://img.shields.io/badge/Supabase-v1.0.0-000000?style=for-the-badge&logo=supabase)](https://supabase.io/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-v15-336791?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
-[![WebSockets](https://img.shields.io/badge/WebSockets-v1.0.0-008000?style=for-the-badge&logo=websockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-[![Jest](https://img.shields.io/badge/Jest-v29.5.0-C21325?style=for-the-badge&logo=jest)](https://jestjs.io/)
-[![Material UI](https://img.shields.io/badge/Material%20UI-v5.0.0-007FFF?style=for-the-badge&logo=mui)](https://mui.com/)
-[![Swagger](https://img.shields.io/badge/Swagger-v4.1.6-85EA2D?style=for-the-badge&logo=swagger)](https://swagger.io/)
-[![GraphQL](https://img.shields.io/badge/GraphQL-v15.5.0-E10098?style=for-the-badge&logo=graphql)](https://graphql.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Vercel](https://img.shields.io/badge/Vercel-v28.4.5-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
-[![Render](https://img.shields.io/badge/Render-v1.0.0-0078D4?style=for-the-badge&logo=render)](https://render.com/)
-[![Docker](https://img.shields.io/badge/Docker-v20.10.8-2496ED?style=for-the-badge&logo=docker)](https://www.docker.com/)
-[![Nginx](https://img.shields.io/badge/Nginx-v1.21.4-269539?style=for-the-badge&logo=nginx)](https://nginx.org/)
-[![Jenkins](https://img.shields.io/badge/Jenkins-v2.319-000000?style=for-the-badge&logo=jenkins)](https://www.jenkins.io/)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.22-326CE5?style=for-the-badge&logo=kubernetes)](https://kubernetes.io/)
+[![NestJS](https://img.shields.io/badge/NestJS-v11.0.0-E0234E?style=for-the-badge\&logo=nestjs)](https://nestjs.com/)
+[![React](https://img.shields.io/badge/React-v17.0.2-61DAFB?style=for-the-badge\&logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-v6.0.5-646CFF?style=for-the-badge\&logo=vite)](https://vitejs.dev/)
+[![Supabase](https://img.shields.io/badge/Supabase-v1.0.0-000000?style=for-the-badge\&logo=supabase)](https://supabase.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-v15-336791?style=for-the-badge\&logo=postgresql)](https://www.postgresql.org/)
+[![WebSockets](https://img.shields.io/badge/WebSockets-v1.0.0-008000?style=for-the-badge\&logo=websockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+[![Jest](https://img.shields.io/badge/Jest-v29.5.0-C21325?style=for-the-badge\&logo=jest)](https://jestjs.io/)
+[![Material UI](https://img.shields.io/badge/Material%20UI-v5.0.0-007FFF?style=for-the-badge\&logo=mui)](https://mui.com/)
+[![Swagger](https://img.shields.io/badge/Swagger-v4.1.6-85EA2D?style=for-the-badge\&logo=swagger)](https://swagger.io/)
+[![GraphQL](https://img.shields.io/badge/GraphQL-v15.5.0-E10098?style=for-the-badge\&logo=graphql)](https://graphql.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-3178C6?style=for-the-badge\&logo=typescript)](https://www.typescriptlang.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-v28.4.5-000000?style=for-the-badge\&logo=vercel)](https://vercel.com/)
+[![Render](https://img.shields.io/badge/Render-v1.0.0-0078D4?style=for-the-badge\&logo=render)](https://render.com/)
+[![Docker](https://img.shields.io/badge/Docker-v20.10.8-2496ED?style=for-the-badge\&logo=docker)](https://www.docker.com/)
+[![Nginx](https://img.shields.io/badge/Nginx-v1.21.4-269539?style=for-the-badge\&logo=nginx)](https://nginx.org/)
+[![Jenkins](https://img.shields.io/badge/Jenkins-v2.319-000000?style=for-the-badge\&logo=jenkins)](https://www.jenkins.io/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.22-326CE5?style=for-the-badge\&logo=kubernetes)](https://kubernetes.io/)
 
-CollabNote is a collaborative notes platform designed to help you take, share, and manage notes effectively. It features a user-friendly interface, powerful backend APIs, and seamless deployment for both frontend and backend.
+CollabNote is a collaborative notes platform designed to help users create, share, organize, and manage notes efficiently. It provides a modern frontend, scalable backend APIs, real-time collaboration, authentication, and multiple deployment options.
 
 ## Table of Contents
-- [💡 Features](#-features)
-- [🚀 Deployment](#-deployment)
-- [🎯 Tech Stack](#-tech-stack)
-- [🖼️ UI Overview](#-ui-overview)
-- [📂 Project Structure](#-project-structure)
-- [🛠️ Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running Locally](#running-locally)
-  - [Using Docker](#using-docker)
-- [📖 API Documentation](#-api-documentation)
-  - [API Endpoints](#api-endpoints)
-  - [Database Schema](#database-schema)
-  - [Detailed Guide for Using the `openapi.yaml` File](#detailed-guide-for-using-the-openapiyaml-file)
-- [🖥️ GraphQL Integration](#-graphql-integration)
-- [🧰 Nginx Configuration](#-nginx-configuration)
-- [🌐 Kubernetes Deployment](#-kubernetes-deployment)
-- [👨🏻‍💻 Continuous Integration and Deployment with Jenkins](#-continuous-integration-and-deployment-with-jenkins)
-- [🧪 Testing](#-testing)
-  - [Backend Tests](#backend-tests)
-  - [Frontend Tests](#frontend-tests)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [🎉 Acknowledgments](#-acknowledgments)
+
+* [💡 Features](#-features)
+* [🚀 Deployment](#-deployment)
+* [🎯 Tech Stack](#-tech-stack)
+* [🖼️ UI Overview](#-ui-overview)
+* [📂 Project Structure](#-project-structure)
+* [🛠️ Getting Started](#-getting-started)
+
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Running Locally](#running-locally)
+  * [Using Docker](#using-docker)
+* [📖 API Documentation](#-api-documentation)
+
+  * [API Endpoints](#api-endpoints)
+  * [Database Schema](#database-schema)
+  * [Using the OpenAPI File](#using-the-openapi-file)
+* [🖥️ GraphQL Integration](#-graphql-integration)
+* [🧰 Nginx Configuration](#-nginx-configuration)
+* [🌐 Kubernetes Deployment](#-kubernetes-deployment)
+* [👨🏻‍💻 Continuous Integration and Deployment with Jenkins](#-continuous-integration-and-deployment-with-jenkins)
+* [🧪 Testing](#-testing)
+* [🤝 Contributing](#-contributing)
+* [📄 License](#-license)
+* [🎉 Acknowledgments](#-acknowledgments)
 
 ## 💡 Features
 
-- **Authentication**: Secure user login, registration, and password management.
-- **Notes Management**: Create, update, delete, and reorder notes.
-- **Sharing**: Share notes with other users seamlessly.
-- **Syncing**: Real-time syncing of notes across devices, and across users, thanks to Supabase and WebSockets.
-- **Collaboration**: Collaborate with others on notes in real-time.
-- **Search**: Search for notes by title or content.
-- **User Profiles**: Manage and search user profiles.
-- **Profile Settings**: Update user profile information.
-- **Dark Mode**: Toggle between light and dark themes.
-- **Testing**: Unit and integration tests for backend and frontend.
-- **Responsive Design**: Works on all devices and screen sizes.
-- **Swagger Documentation**: Comprehensive API documentation.
-- **CI/CD Pipeline**: Jenkins pipeline for automated testing and deployment.
+* **Authentication:** Secure user registration, login, and password management.
+* **Notes Management:** Create, update, delete, and reorder notes.
+* **Sharing:** Share notes with other users.
+* **Real-Time Syncing:** Synchronize notes across devices and users using Supabase and WebSockets.
+* **Collaboration:** Collaborate with other users in real time.
+* **Search:** Search notes by title or content.
+* **User Profiles:** Manage and search user profiles.
+* **Profile Settings:** Update profile information.
+* **Dark Mode:** Switch between light and dark themes.
+* **Testing:** Unit and integration tests for backend and frontend.
+* **Responsive Design:** Optimized for different devices and screen sizes.
+* **Swagger Documentation:** Interactive API documentation.
+* **GraphQL:** Support for querying and manipulating application data.
+* **CI/CD:** Jenkins-based continuous integration and deployment support.
+* **Docker:** Containerized deployment support.
+* **Nginx:** Reverse proxy and load-balancing configuration.
+* **Kubernetes:** Kubernetes deployment configuration.
 
 ## 🚀 Deployment
 
-The app is deployed on Vercel for the frontend. You can access the live app at [CollabNote](https://collabnote-app.vercel.app/).
+The frontend can be deployed on Vercel.
 
-Additionally, the backend API is deployed on Render. You can access the API documentation at [CollabNote API](https://collabnote-fullstack-app.onrender.com/).
+**Frontend:**
+https://collabnote-app.vercel.app/
 
-The backup frontend is also hosted on Netlify, which you can access at [CollabNote Netlify](https://notesapp-nestjs.netlify.app/).
+The backend API is deployed on Render.
+
+**Backend API / Swagger:**
+https://collabnote-fullstack-app.onrender.com/
+
+A backup frontend deployment is also available on Netlify.
+
+**Netlify:**
+https://notesapp-nestjs.netlify.app/
 
 > [!IMPORTANT]
-> **Note:** The backend API may spin down due to inactivity. If you encounter any issues, please try again later. If inactive, the API may take a few seconds to start up, so frontend requests and Swagger may take some time to load initially.
+> The backend API may spin down after a period of inactivity depending on the hosting plan. If the first request takes a few seconds, wait for the service to wake up and try again.
 
 > [!CAUTION]
-> **Important:** Supabase may pause the app's database if it exceeds the free tier limits. Thus, if you are unable to log in or register, [let me know](mailto:hoangson091104@gmail.com) and I will re-enable it (and it may take a while...)
+> Supabase projects may pause or become unavailable depending on usage and free-tier limitations. If authentication or database requests stop working, check the Supabase project status and environment configuration.
 
 ## 🎯 Tech Stack
 
-| Technology                                    | Description                         |
-|-----------------------------------------------|-------------------------------------|
-| [NestJS](https://nestjs.com/)                 | Backend framework for scalable APIs |
-| [React](https://reactjs.org/)                 | Frontend library for building UI    |
-| [Vite](https://vitejs.dev/)                   | Frontend build tool                 |
-| [Supabase](https://supabase.io/)              | Backend-as-a-service for auth & DB  |
-| [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) | Real-time communication for syncing |
-| [PostgreSQL](https://www.postgresql.org/)     | Database for storing app data       |
-| [TypeScript](https://www.typescriptlang.org/) | Type-safe development               |
-| [Swagger](https://swagger.io/)                | API documentation and testing tool  |
-| [Docker](https://www.docker.com/)             | Containerization for apps           |
-| [Nginx](https://nginx.org/)                   | Web server for load balancing       |
-| [Jenkins](https://www.jenkins.io/)            | CI/CD tool for automated testing    |
-| [Render](https://render.com/)                 | Cloud platform for hosting apps     |
-| [Vercel](https://vercel.com/)                 | Cloud platform for frontend hosting |
-| [GraphQL](https://graphql.org/)               | Query language for APIs             |
+| Technology                                                                    | Description                                          |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [NestJS](https://nestjs.com/)                                                 | Backend framework for scalable APIs                  |
+| [React](https://react.dev/)                                                   | Frontend library for building the user interface     |
+| [Vite](https://vitejs.dev/)                                                   | Frontend build tool                                  |
+| [Supabase](https://supabase.com/)                                             | Backend-as-a-service for authentication and database |
+| [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) | Real-time communication and synchronization          |
+| [PostgreSQL](https://www.postgresql.org/)                                     | Relational database                                  |
+| [TypeScript](https://www.typescriptlang.org/)                                 | Type-safe development                                |
+| [Swagger](https://swagger.io/)                                                | API documentation and testing                        |
+| [Docker](https://www.docker.com/)                                             | Containerization                                     |
+| [Nginx](https://nginx.org/)                                                   | Reverse proxy and load balancing                     |
+| [Jenkins](https://www.jenkins.io/)                                            | CI/CD automation                                     |
+| [Render](https://render.com/)                                                 | Backend hosting platform                             |
+| [Vercel](https://vercel.com/)                                                 | Frontend hosting platform                            |
+| [GraphQL](https://graphql.org/)                                               | API query language                                   |
 
 ## 🖼️ UI Overview
 
 ### Home Page
 
 <p align="center">
-  <img src="img/home.png" alt="Login Page" />
+  <img src="img/home.png" alt="Home Page" />
 </p>
 
 ### Home Page - Dark Mode
 
 <p align="center">
-  <img src="img/home-dark.png" alt="Login Page - Dark Mode" />
+  <img src="img/home-dark.png" alt="Home Page - Dark Mode" />
 </p>
 
 ### Notes Dashboard
@@ -195,213 +209,272 @@ The backup frontend is also hosted on Netlify, which you can access at [CollabNo
 
 ## 📂 Project Structure
 
-```
-DocuThinker-AI-App/
+```text
+CollabNote-Fullstack-App/
+
 ├── backend/
 │   ├── src/
 │   │   ├── auth/
-│   │   │   ├── auth.module.ts        # Authentication module
-│   │   │   ├── auth.controller.ts    # Authentication controller
-│   │   │   ├── auth.service.ts       # Authentication service
-│   │   │   ├── auth.schema.ts        # Authentication schema
-│   │   │   ├── auth.resolver.ts      # Authentication resolver
-│   │   │   └── jwt.strategy.ts       # JWT authentication strategy
+│   │   │   ├── auth.module.ts
+│   │   │   ├── auth.controller.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── auth.schema.ts
+│   │   │   ├── auth.resolver.ts
+│   │   │   └── jwt.strategy.ts
 │   │   ├── dto/
-│   │   │   ├── create-note.input.ts  # Create note DTO
-│   │   │   └── update-note.input.ts  # Update note DTO
+│   │   │   ├── create-note.input.ts
+│   │   │   └── update-note.input.ts
 │   │   ├── notes/
-│   │   │   ├── notes.schema.ts       # Notes schema
-│   │   │   ├── notes.resolver.ts     # Notes resolver
-│   │   │   ├── notes.module.ts       # Notes module
-│   │   │   ├── notes.controller.ts   # Notes controller
-│   │   │   └── notes.service.ts      # Notes service
+│   │   │   ├── notes.schema.ts
+│   │   │   ├── notes.resolver.ts
+│   │   │   ├── notes.module.ts
+│   │   │   ├── notes.controller.ts
+│   │   │   └── notes.service.ts
 │   │   ├── profile/
-│   │   │   ├── profile.schema.ts     # Profile schema
-│   │   │   ├── profile.resolver.ts   # Profile resolver
-│   │   │   ├── profile.module.ts     # Profile module
-│   │   │   ├── profile.controller.ts # Profile controller
-│   │   │   └── profile.service.ts    # Profile service
+│   │   │   ├── profile.schema.ts
+│   │   │   ├── profile.resolver.ts
+│   │   │   ├── profile.module.ts
+│   │   │   ├── profile.controller.ts
+│   │   │   └── profile.service.ts
 │   │   ├── supabase/
-│   │   │   ├── supabase.module.ts    # Supabase module
-│   │   │   └── supabase.service.ts   # Supabase service
+│   │   │   ├── supabase.module.ts
+│   │   │   └── supabase.service.ts
 │   │   ├── types/
-│   │   │   └── authenticated-request.ts  # Authenticated user type
-│   │   ├── schema.gql                # GraphQL schema 
-│   │   ├── app.module.ts             # Main app module
-│   │   ├── app.test.ts               # App test file
-│   │   └── main.ts                   # Main entry point for the backend
-│   ├── .env                          # Environment variables (git-ignored)
-│   ├── build-backend.sh              # Shell script to build the backend
-│   ├── Dockerfile                    # Docker configuration file
-│   ├── docker-compose.yml            # Docker Compose file for the backend
-│   ├── package.json                  # Project dependencies and scripts
-│   ├── package-lock.json             # Lock file for dependencies
-│   ├── tsconfig.json                 # TypeScript configuration file
-│   └── vercel.json                   # Vercel configuration file
+│   │   │   └── authenticated-request.ts
+│   │   ├── schema.gql
+│   │   ├── app.module.ts
+│   │   ├── app.test.ts
+│   │   └── main.ts
+│   ├── .env
+│   ├── build-backend.sh
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── tsconfig.json
+│   └── vercel.json
 │
 ├── frontend/
 │   ├── public/
-│   │   ├── favicon.ico               # Favicon for the app
-│   │   ├── (other images...)         # Other images used in the app
-│   │   ├── index.html                # Main HTML template
-│   │   └── manifest.json             # Manifest for PWA settings
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   └── manifest.json
 │   ├── src/
-│   │   ├── assets/                   # Static assets like images and fonts
-│   │   │   └── logo.png              # App logo or images
+│   │   ├── assets/
+│   │   │   └── logo.png
 │   │   ├── components/
-│   │   │   ├── LoadingOverlay.tsx    # Loading overlay component
-│   │   │   └── PasswordField.tsx     # Password field component
+│   │   │   ├── LoadingOverlay.tsx
+│   │   │   └── PasswordField.tsx
 │   │   ├── layout/
-│   │   │   ├── ResponsiveDrawer.tsx  # Responsive drawer component
-│   │   │   ├── Footer.tsx            # Footer component
-│   │   │   ├── Layout.tsx            # Main layout component
-│   │   │   └── Navbar.tsx            # Navbar component
+│   │   │   ├── ResponsiveDrawer.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Layout.tsx
+│   │   │   └── Navbar.tsx
 │   │   ├── routes/
-│   │   │   ├── ForgotPasswordPage.tsx   # Forgot password page
-│   │   │   ├── HomePage.tsx          # Home page
-│   │   │   ├── LoginPage.tsx         # Login page
-│   │   │   ├── NoteDetailsPage.tsx   # Note details page
-│   │   │   ├── NotesPage.tsx         # Notes dashboard page
-│   │   │   ├── ProfilePage.tsx       # Profile page
-│   │   │   └── RegisterPage.tsx      # Register page
+│   │   │   ├── ForgotPasswordPage.tsx
+│   │   │   ├── HomePage.tsx
+│   │   │   ├── LoginPage.tsx
+│   │   │   ├── NoteDetailsPage.tsx
+│   │   │   ├── NotesPage.tsx
+│   │   │   ├── ProfilePage.tsx
+│   │   │   └── RegisterPage.tsx
 │   │   ├── theme/
-│   │   │   ├── index.ts              # Theme configuration
-│   │   │   ├── ThemeContext.tsx      # Theme context provider
-│   │   │   └── ThemeProviderWrapper.tsx  # Theme provider wrapper
-│   │   ├── App.tsx                   # Main App component
-│   │   ├── App.test.tsx              # App test file
-│   │   ├── App.css                   # Global CSS 1
-│   │   ├── index.css                 # Global CSS 2
-│   │   ├── main.tsx                  # Main entry point for the frontend
-│   │   └── vite-env.d.ts             # Vite environment types
-│   ├── .gitignore                    # Git ignore file
-│   ├── package.json                  # Project dependencies and scripts
-│   ├── package-lock.json             # Lock file for dependencies
-│   ├── Dockerfile                    # Docker configuration file
-│   ├── docker-compose.yml            # Docker Compose file for the frontend
-│   ├── index.html                    # Main HTML template
-│   ├── build-frontend.sh             # Shell script to build the frontend
-│   ├── vercel.json                   # Vercel configuration file
-│   ├── vite.config.ts                # Vite configuration file
-│   ├── tsconfig.app.json             # TypeScript configuration file for the app
-│   ├── tsconfig.node.json            # TypeScript configuration file for Node
-│   └── tsconfig.json                 # TypeScript configuration file
+│   │   │   ├── index.ts
+│   │   │   ├── ThemeContext.tsx
+│   │   │   └── ThemeProviderWrapper.tsx
+│   │   ├── App.tsx
+│   │   ├── App.test.tsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   └── vite-env.d.ts
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── index.html
+│   ├── build-frontend.sh
+│   ├── vercel.json
+│   ├── vite.config.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.node.json
+│   └── tsconfig.json
 │
-├── kubernetes/                       # Kubernetes configuration files
-│   ├── backend-deployment.yaml       # Deployment configuration for the backend
-│   ├── backend-service.yaml          # Service configuration for the backend
-│   ├── frontend-deployment.yaml      # Deployment configuration for the frontend
-│   ├── frontend-service.yaml         # Service configuration for the frontend
-│   └── configmap.yaml                # ConfigMap configuration for environment variables
+├── kubernetes/
+│   ├── backend-deployment.yaml
+│   ├── backend-service.yaml
+│   ├── frontend-deployment.yaml
+│   ├── frontend-service.yaml
+│   └── configmap.yaml
 │
 ├── nginx/
-│   ├── start_nginx.sh                # Shell script to start NGINX
-│   ├── nginx.conf                    # NGINX configuration file for load balancing and caching
-│   ├── docker-compose.yml            # Docker Compose file for NGINX
-│   └── Dockerfile                    # Docker configuration file for NGINX
+│   ├── start_nginx.sh
+│   ├── nginx.conf
+│   ├── docker-compose.yml
+│   └── Dockerfile
 │
-├── images/                           # Images for the README
-├── .env                              # Environment variables file for the whole app
-├── docker-compose.yml                # Docker Compose file for containerization
-├── package.json                      # Project dependencies and scripts
-├── package-lock.json                 # Lock file for dependencies
-├── vercel.json                       # Vercel configuration file
-├── openapi.yaml                      # OpenAPI specification for API documentation
-├── jenkins_cicd.sh                   # Shell script for managing the Jenkins CI/CD pipeline
-├── .gitignore                        # Git ignore file
-├── LICENSE                           # License file for the project
-├── README.md                         # Comprehensive README for the whole app
-└── (and many more files...)          # Additional files and directories not listed here
+├── images/
+├── .env
+├── docker-compose.yml
+├── package.json
+├── package-lock.json
+├── vercel.json
+├── openapi.yaml
+├── jenkins_cicd.sh
+├── LICENSE
+├── README.md
+└── ...
 ```
 
 ## 🛠️ Getting Started
 
-Follow these steps to set up the project on your local machine.
+Follow the steps below to run CollabNote locally.
 
 ### Prerequisites
 
-Ensure you have the following installed:
-- **Node.js**: v18 or above
-- **npm**: v9 or above
-- **PostgreSQL**: v15 or above
-- **Docker** (Optional)
+Make sure the following tools are installed:
+
+* **Node.js:** v18 or above
+* **npm:** v9 or above
+* **PostgreSQL:** v15 or above
+* **Docker:** Optional
 
 ### Installation
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/hoangsonww/CollabNote-Fullstack-App.git
-   cd CollabNote-Fullstack-App
-   ```
+#### 1. Clone the Repository
 
-2. **Set Up Backend**:
-   ```bash
-   cd backend
-   npm install
-   ```
+```bash
+git clone https://github.com/careers-umair-dev/CollabNote-Fullstack-App.git
+cd CollabNote-Fullstack-App
+```
 
-3. **Set Up Frontend**:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
+#### 2. Install Backend Dependencies
 
-4. **Configure Environment Variables**:
-- Create `.env` files in the `backend` and `frontend` directories.
-- For **backend** (`backend/.env`):
-  ```env
-  SUPABASE_URL=your_supabase_url
-  SUPABASE_SERVICE_KEY=your_supabase_service_key
-  JWT_SECRET=your_jwt_secret
-  JWT_EXPIRES_IN=jwt_expiry_time(eg. 1d)
-  PORT=4000
-  ```
-- For **frontend** (`frontend/.env`):
-  ```env
-  VITE_API_URL=http://localhost:4000
-  ```
+```bash
+cd backend
+npm install
+```
+
+#### 3. Install Frontend Dependencies
+
+```bash
+cd ../frontend
+npm install
+```
+
+### Environment Variables
+
+Create environment files locally. **Do not commit secrets or `.env` files to GitHub.**
+
+#### Backend
+
+Create:
+
+```text
+backend/.env
+```
+
+Example:
+
+```env
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_KEY=your_supabase_service_key
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRES_IN=1d
+PORT=4000
+```
+
+#### Frontend
+
+Create:
+
+```text
+frontend/.env
+```
+
+Example:
+
+```env
+VITE_API_URL=http://localhost:4000
+```
+
+For production deployments, configure these variables in the hosting platform's environment-variable settings instead of committing them to the repository.
 
 ### Running Locally
 
-1. **Start the Backend**:
-   ```bash
-   cd backend
-   npm run start:dev
-   ```
+#### Start the Backend
 
-2. **Start the Frontend**:
-   ```bash
-   cd ../frontend
-   npm run dev
-   ```
+```bash
+cd backend
+npm run start:dev
+```
 
-3. Open your browser:
-- **Frontend**: [http://localhost:5172](http://localhost:5172) or your selected Vite port
-- **Backend**: [http://localhost:4000](http://localhost:4000)
-- **Swagger**: [http://localhost:4000/api](http://localhost:4000/api)
+Backend:
 
-### Using Docker
+```text
+http://localhost:4000
+```
 
-1. **Build and Run Docker Containers**:
-   ```bash
-   docker-compose up --build
-   ```
+Swagger:
 
-2. **Access the Services**:
-- Backend: [http://localhost:4000](http://localhost:4000)
-- Frontend: [http://localhost:3000](http://localhost:3000)
+```text
+http://localhost:4000/api
+```
+
+#### Start the Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm run dev
+```
+
+The frontend will normally be available at the Vite-provided local URL, for example:
+
+```text
+http://localhost:5172
+```
+
+## Using Docker
+
+### Build and Run Containers
+
+```bash
+docker-compose up --build
+```
+
+Depending on the Docker configuration, services may be available through:
+
+```text
+Backend:  http://localhost:4000
+Frontend: http://localhost:3000
+```
 
 ## 📖 API Documentation
 
-All APIs are documented in Swagger. Access the documentation at [http://localhost:4000/api](http://localhost:4000/api).
+The REST APIs are documented using Swagger.
+
+Local Swagger:
+
+```text
+http://localhost:4000/api
+```
+
+Production Swagger:
+
+```text
+https://collabnote-fullstack-app.onrender.com/api
+```
 
 ### API Endpoints
 
 | Method | Endpoint                   | Description                               |
-|--------|----------------------------|-------------------------------------------|
+| ------ | -------------------------- | ----------------------------------------- |
 | POST   | `/auth/register`           | Register a new user                       |
 | POST   | `/auth/login`              | Login an existing user                    |
-| POST   | `/auth/check-email-exists` | Check if an email exists                  |
+| POST   | `/auth/check-email-exists` | Check whether an email exists             |
 | POST   | `/auth/reset-password`     | Reset a user's password                   |
 | GET    | `/notes`                   | Retrieve user notes                       |
 | POST   | `/notes`                   | Create a new note                         |
@@ -411,88 +484,98 @@ All APIs are documented in Swagger. Access the documentation at [http://localhos
 | POST   | `/notes/reorder`           | Reorder user notes                        |
 | GET    | `/profile/me`              | Retrieve the authenticated user's profile |
 | GET    | `/profile/userId/{id}`     | Retrieve a user profile by ID             |
-| GET    | `/profile/search`          | Search for a user profile by username     |
+| GET    | `/profile/search`          | Search for a user profile                 |
 | PATCH  | `/profile/me`              | Update the authenticated user's profile   |
 
 ### Database Schema
 
-The database schema consists of the following tables:
+The application uses PostgreSQL through Supabase.
 
 <p align="center">
   <img src="img/schema.png" alt="Database Schema" />
 </p>
 
-Note the `user_id` foreign key relationship between the `notes` and `users` tables. Additionally, more tables will be added as the app grows in the future!
+The `notes` data is associated with users through the appropriate user relationship. The database structure can be expanded as the application grows.
 
-### Detailed Guide for Using the `openapi.yaml` File
+### Using the OpenAPI File
 
-1. **View the API Documentation**
+The project includes an `openapi.yaml` file that can be used with tools such as Swagger Editor and Postman.
 
-- Open [Swagger Editor](https://editor.swagger.io/).
-- Upload the `openapi.yaml` file or paste its content.
-- Visualize and interact with the API documentation.
+#### 1. View API Documentation
 
-2. **Test the API**
+Open [Swagger Editor](https://editor.swagger.io/) and upload the `openapi.yaml` file.
 
-- Import `openapi.yaml` into [Postman](https://www.postman.com/):
-  - Open Postman → Import → Select `openapi.yaml`.
-  - Test the API endpoints directly from Postman.
-- Or use [Swagger UI](https://swagger.io/tools/swagger-ui/):
-  - Provide the file URL or upload it to view and test endpoints.
+#### 2. Test the API
 
-3. **Generate Client Libraries**
+You can import the OpenAPI file into [Postman](https://www.postman.com/):
 
-- Install OpenAPI Generator:
-  ```bash
-  npm install @openapitools/openapi-generator-cli -g
-  ```
-- Generate a client library:
-  ```bash
-  openapi-generator-cli generate -i openapi.yaml -g <language> -o ./client
-  ```
-- Replace `<language>` with the desired programming language.
+```text
+Postman → Import → Select openapi.yaml
+```
 
-4. **Generate Server Stubs**
+You can then test the documented API endpoints.
 
-- Generate a server stub:
-  ```bash
-  openapi-generator-cli generate -i openapi.yaml -g <framework> -o ./server
-  ```
-- Replace `<framework>` with the desired framework.
+#### 3. Generate Client Libraries
 
-5. **Run a Mock Server**
+Install OpenAPI Generator:
 
-- Install Prism:
-  ```bash
-  npm install -g @stoplight/prism-cli
-  ```
-- Start the mock server:
-  ```bash
-  prism mock openapi.yaml
-  ```
+```bash
+npm install @openapitools/openapi-generator-cli -g
+```
 
-6. **Validate the OpenAPI File**
+Generate a client:
 
-- Use [Swagger Validator](https://validator.swagger.io/):
-  - Upload `openapi.yaml` or paste its content to check for errors.
+```bash
+openapi-generator-cli generate -i openapi.yaml -g <language> -o ./client
+```
 
-This guide enables you to view, test, and utilize the API.
+Replace `<language>` with the required programming language.
 
-## **🖥️ GraphQL Integration**
+#### 4. Generate Server Stubs
 
-The CollabNote API also supports GraphQL for querying and manipulating data.
+```bash
+openapi-generator-cli generate -i openapi.yaml -g <framework> -o ./server
+```
 
-To access, navigate to [https://collabnote-fullstack-app.onrender.com/graphql](https://collabnote-fullstack-app.onrender.com/graphql) and use the GraphQL Playground to interact with the API.
+Replace `<framework>` with the required server framework.
 
-Alternatively, you can start a local backend server following the steps above and access the GraphQL Playground at [http://localhost:4000/graphql](http://localhost:4000/graphql).
+#### 5. Run a Mock Server
 
-You should see something like this:
+Install Prism:
 
-<p align="center">
-  <img src="img/graphql.png" alt="GraphQL Playground" />
-</p>
+```bash
+npm install -g @stoplight/prism-cli
+```
 
-You can query something like this:
+Start the mock server:
+
+```bash
+prism mock openapi.yaml
+```
+
+#### 6. Validate the OpenAPI File
+
+Use the [Swagger Validator](https://validator.swagger.io/) to validate the OpenAPI specification.
+
+## 🖥️ GraphQL Integration
+
+CollabNote also supports GraphQL for querying and manipulating application data.
+
+Production GraphQL endpoint:
+
+```text
+https://collabnote-fullstack-app.onrender.com/graphql
+```
+
+Local GraphQL endpoint:
+
+```text
+http://localhost:4000/graphql
+```
+
+You can use the GraphQL interface to explore queries and mutations.
+
+Example query:
 
 ```graphql
 query {
@@ -511,16 +594,19 @@ query {
 }
 ```
 
-This query fetches all notes for a user with ID 1. You can modify the query to suit your needs.
+This query retrieves notes for the specified user based on the available GraphQL schema.
 
-Feel free to explore the GraphQL API and test different queries and mutations! Consult the [GraphQL documentation](https://graphql.org/learn/) for more information.
+For more information, visit the [GraphQL documentation](https://graphql.org/learn/).
 
-## **🧰 Nginx Configuration**
+<p align="center">
+  <img src="img/graphql.png" alt="GraphQL Playground" />
+</p>
 
-- The `nginx` directory contains an Nginx configuration for reverse proxy and load balancing.
-- Use Nginx to route requests to multiple instances of the API.
-- Configure SSL termination and caching for improved performance.
-- The Nginx configuration looks like this:
+## 🧰 Nginx Configuration
+
+The `nginx` directory contains configuration files for reverse proxying, load balancing, caching, and serving application traffic.
+
+Example configuration:
 
 ```nginx
 server {
@@ -531,54 +617,85 @@ server {
         proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
+        proxy_set_header Connection "upgrade";
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
 }
 ```
 
-- For more information, refer to the [Nginx documentation](https://nginx.org/en/docs/) and the [Nginx Directory](nginx/README.md).
+For more information, see the [Nginx documentation](https://nginx.org/en/docs/).
 
-## **🌐 Kubernetes Deployment**
+## 🌐 Kubernetes Deployment
 
-1. Create Kubernetes manifests for the services.
-2. Deploy to a cluster:
-   ```bash
-   kubectl apply -f kubernetes/
-   ```
+The project includes Kubernetes configuration files inside the `kubernetes` directory.
 
-3. Access the application using the service URL.
+Apply the configuration:
 
-## **👨🏻‍💻 Continuous Integration and Deployment with Jenkins**
+```bash
+kubectl apply -f kubernetes/
+```
 
-The CollabNote API also includes a Jenkins pipeline for continuous integration and deployment.
+The Kubernetes configuration includes:
 
-1. **Pipeline Configuration:** The `Jenkinsfile` defines the CI/CD pipeline stages, including code checkout, dependency installation, testing, building, and deployment. Add it to the root of the project.
+* Backend deployment
+* Backend service
+* Frontend deployment
+* Frontend service
+* ConfigMap
 
-2. **Job Setup:** Create a pipeline job in Jenkins, point it to the repository, and configure it to use the `Jenkinsfile`.
+After deployment, access the application using the configured Kubernetes service.
 
-3. **Automated Testing:** The pipeline runs `npm test` to ensure all tests pass before proceeding to the build or deployment stages.
+## 👨🏻‍💻 Continuous Integration and Deployment with Jenkins
 
-4. **Environment Variables:** Use Jenkins environment variables to securely manage secrets like API keys and credentials for services such as MongoDB, Redis, or Render.
+The project supports Jenkins-based CI/CD workflows.
 
-5. **Deployment:** The pipeline supports deploying the application using Render or directly to a server using SSH and PM2.
+### Pipeline Configuration
 
-6. **Webhooks:** Integrate GitHub/GitLab webhooks to trigger builds automatically on code changes.
+A Jenkins pipeline can be configured to handle:
 
-7. **Notifications:** Add Slack or email notifications in the pipeline to inform team members about build and deployment statuses.
+1. Source code checkout
+2. Dependency installation
+3. Automated testing
+4. Application build
+5. Deployment
+
+### Environment Variables
+
+Use Jenkins environment variables or credentials management for sensitive values such as:
+
+* Supabase credentials
+* JWT secrets
+* API keys
+* Deployment credentials
+
+Never commit production secrets to GitHub.
+
+### Deployment
+
+The application can be deployed through supported hosting platforms such as Render, Vercel, or a dedicated server using tools such as PM2.
+
+### Webhooks
+
+GitHub webhooks can be configured to automatically trigger Jenkins builds when changes are pushed to the repository.
+
+### Notifications
+
+Jenkins can also be configured to send build and deployment notifications through supported notification services.
 
 ## 🧪 Testing
 
-We also feature Jest unit and integration tests for both the backend and frontend. Run the tests to ensure the app functions as expected.
+The project includes Jest-based tests for backend and frontend functionality.
 
 ### Backend Tests
+
 ```bash
 cd backend
 npm run test
 ```
 
 ### Frontend Tests
+
 ```bash
 cd frontend
 npm run test
@@ -586,20 +703,60 @@ npm run test
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please fork the repository and create a pull request.
+Contributions and improvements are welcome.
+
+To contribute:
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Make your changes.
+4. Test your changes.
+5. Commit your changes.
+6. Push the branch.
+7. Create a pull request.
+
+Example:
+
+```bash
+git checkout -b feature/your-feature
+git add .
+git commit -m "Add your feature"
+git push origin feature/your-feature
+```
 
 ## 📄 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
+Copyright (c) 2025 Umair Ansari.
+
 ## 🎉 Acknowledgments
 
-- **Son Nguyen**: Creator of CollabNote.
-- **Umair Ansari**: Current maintainer of this project.
-- **NestJS, React, Vite, WebSockets**: The tech stack that powers this project.
+* **Umair Ansari:** Project maintainer.
+* **NestJS:** Backend framework.
+* **React:** Frontend library.
+* **Vite:** Frontend build tool.
+* **Supabase:** Database and backend services.
+* **PostgreSQL:** Relational database.
+* **GraphQL:** API query language.
+* **Swagger:** API documentation.
+* **Docker:** Containerization platform.
+* **Nginx:** Web server and reverse proxy.
+* **Jenkins:** CI/CD automation.
+* **Kubernetes:** Container orchestration.
 
 ---
 
-Thank you for visiting CollabNote today! **Happy notetaking!** 📝🚀
+Thank you for visiting **CollabNote**!
+**Happy notetaking!** 📝🚀
+
+<p align="center">
+  Maintained by <strong>Umair Ansari</strong>
+</p>
 
 [🔝 Back to Top](#collabnote---a-nestjs-react-vite-and-supabase-fullstack-notetaking-app)
+
+```
+
+**Important:** Maine `clone` URL ko `https://github.com/careers-umair-dev/CollabNote-Fullstack-App.git` rakha hai. Agar tumhari actual GitHub repository ka **exact naam different** hai, to README mein sirf us URL ko apne actual repo URL se replace karna hoga.
+```

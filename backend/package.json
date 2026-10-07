@@ -1,3 +1,4 @@
+```json
 {
   "name": "backend",
   "version": "1.0.0",
@@ -25,12 +26,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoangsonww/CollabNote-Fullstack-App.git"
+    "url": "https://github.com/careers-umair-dev"
   },
-  "bugs": {
-    "url": "https://github.com/hoangsonww/CollabNote-Fullstack-App/issues"
-  },
-  "author": "Son Nguyen",
+  "author": "Umair Ansari",
   "license": "MIT",
   "dependencies": {
     "@nestjs/apollo": "^13.0.2",
@@ -63,3 +61,4 @@
     "typescript": "^5.7.3"
   }
 }
+```

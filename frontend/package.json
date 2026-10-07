@@ -1,3 +1,4 @@
+```json
 {
   "name": "frontend",
   "private": false,
@@ -9,13 +10,13 @@
       "name": "Umair Ansari"
     }
   ],
-  "author": "Son Nguyen",
+  "author": "Umair Ansari",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoangsonww/CollabNote-Fullstack-App.git"
+    "url": "https://github.com/careers-umair-dev"
   },
   "bugs": {
-    "url": "https://github.com/hoangsonww/CollabNote-Fullstack-App/issues"
+    "url": "https://github.com/careers-umair-dev"
   },
   "keywords": [
     "react",
@@ -60,3 +61,4 @@
     "vite": "^6.0.5"
   }
 }
+```
