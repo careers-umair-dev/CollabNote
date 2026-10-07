@@ -11,6 +11,11 @@
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,html}\""
   },
   "private": false,
+  "maintainers": [
+    {
+      "name": "Umair Ansari"
+    }
+  ],
   "dependencies": {
     "prettier": "^3.4.2"
   }

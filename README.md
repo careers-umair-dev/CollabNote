@@ -594,7 +594,8 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## 🎉 Acknowledgments
 
-- **Son Nguyen**: Creator and maintainer of CollabNote.
+- **Son Nguyen**: Creator of CollabNote.
+- **Umair Ansari**: Current maintainer of this project.
 - **NestJS, React, Vite, WebSockets**: The tech stack that powers this project.
 
 ---

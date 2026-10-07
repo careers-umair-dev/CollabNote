@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Backend for CollabNote App",
   "main": "dist/main.js",
+  "maintainers": [
+    {
+      "name": "Umair Ansari"
+    }
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/main.js",

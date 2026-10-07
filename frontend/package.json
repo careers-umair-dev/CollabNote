@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Umair Ansari"
+    }
+  ],
   "author": "Son Nguyen",
   "repository": {
     "type": "git",
