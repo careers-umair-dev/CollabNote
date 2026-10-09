@@ -755,8 +755,3 @@ Thank you for visiting **CollabNote**!
 </p>
 
 [🔝 Back to Top](#collabnote---a-nestjs-react-vite-and-supabase-fullstack-notetaking-app)
-
-```
-
-**Important:** Maine `clone` URL ko `https://github.com/careers-umair-dev/CollabNote-Fullstack-App.git` rakha hai. Agar tumhari actual GitHub repository ka **exact naam different** hai, to README mein sirf us URL ko apne actual repo URL se replace karna hoga.
-```
