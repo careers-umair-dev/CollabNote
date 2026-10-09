@@ -25,8 +25,6 @@ const slideUp = keyframes`
 
 const LandingPage = () => {
   const theme = useTheme();
-  // @ts-ignore
-  const isDarkMode = theme.palette.mode === "dark";
 
   const features = [
     {

@@ -1,5 +1,4 @@
-import { Box, Typography, IconButton, Link } from "@mui/material";
-import { GitHub, Language, LinkedIn, Mail } from "@mui/icons-material";
+import { Box, Typography, Link } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -8,11 +7,9 @@ export default function Footer() {
   const [token, setToken] = useState<string | null>(
     localStorage.getItem("access_token"),
   );
-  // @ts-ignore
-  const [invalidToken, setInvalidToken] = useState(false);
   const isActive = (path: string) => location.pathname === path;
   const navigate = useNavigate();
-  const isLoggedIn = !!token && !invalidToken;
+  const isLoggedIn = !!token;
 
   const onLogout = () => {
     localStorage.removeItem("access_token");
@@ -44,70 +41,6 @@ export default function Footer() {
         boxShadow: "0 -2px 10px rgba(0, 0, 0, 0.2)",
       }}
     >
-      {/* Social Media Icons */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          gap: 2,
-          mb: 2,
-          animation: "fadeIn 0.5s ease-in-out",
-        }}
-      >
-        <IconButton
-          href="https://github.com/hoangsonww/CollabNote-Fullstack-App"
-          sx={{
-            color: "white",
-            transition: "transform 0.3s ease, color 0.3s ease",
-            "&:hover": {
-              transform: "scale(1.1)",
-              color: "secondary.main",
-            },
-          }}
-        >
-          <GitHub />
-        </IconButton>
-        <IconButton
-          href="https://www.linkedin.com/in/hoangsonw/"
-          sx={{
-            color: "white",
-            transition: "transform 0.3s ease, color 0.3s ease",
-            "&:hover": {
-              transform: "scale(1.1)",
-              color: "secondary.main",
-            },
-          }}
-        >
-          <LinkedIn />
-        </IconButton>
-        <IconButton
-          href="https://sonnguyenhoang.com"
-          sx={{
-            color: "white",
-            transition: "transform 0.3s ease, color 0.3s ease",
-            "&:hover": {
-              transform: "scale(1.1)",
-              color: "secondary.main",
-            },
-          }}
-        >
-          <Language />
-        </IconButton>
-        <IconButton
-          href="mailto:hoangson091104@gmail.com"
-          sx={{
-            color: "white",
-            transition: "transform 0.3s ease, color 0.3s ease",
-            "&:hover": {
-              transform: "scale(1.1)",
-              color: "secondary.main",
-            },
-          }}
-        >
-          <Mail />
-        </IconButton>
-      </Box>
-
       {/* Navigation Links */}
       <Box
         sx={{

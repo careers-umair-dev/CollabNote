@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import {
   Box,
   Paper,
@@ -35,6 +35,18 @@ const avatarImages = [
   "/OIP20.webp",
 ];
 
+interface ProfileData {
+  email?: string;
+  username?: string;
+  created_at?: string;
+}
+
+interface ProfileSearchResult {
+  id: number | string;
+  username: string;
+  email: string;
+}
+
 export default function ProfilePage() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -48,20 +60,17 @@ export default function ProfilePage() {
   const [joinedDate, setJoinedDate] = useState("");
   const [error, setError] = useState("");
   const [randomAvatar, setRandomAvatar] = useState("");
-  // @ts-ignore
-  const [userData, setUserData] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [searchResults, setSearchResults] = useState<ProfileSearchResult[]>([]);
   const [searchLoading, setSearchLoading] = useState(false);
   const [noResults, setNoResults] = useState(false);
 
   const userToken = localStorage.getItem("access_token");
-  // @ts-ignore
-  const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const debounceTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [notesCount, setNotesCount] = useState<number | null>(null);
 
-  const fetchNotesCount = async () => {
+  const fetchNotesCount = useCallback(async () => {
     try {
       const res = await fetch(
         `${API_URL}/notes`,
@@ -76,9 +85,9 @@ export default function ProfilePage() {
       console.error(err);
       setNotesCount(0); // Default to 0 if there's an error
     }
-  };
+  }, [userToken]);
 
-  const fetchMyProfile = async () => {
+  const fetchMyProfile = useCallback(async () => {
     try {
       const res = await fetch(
         `${API_URL}/profile/me`,
@@ -87,8 +96,7 @@ export default function ProfilePage() {
         },
       );
       if (!res.ok) throw new Error("Failed to fetch profile");
-      const data = await res.json();
-      setUserData(data);
+      const data: ProfileData = await res.json();
       if (data.created_at) {
         const joined = new Date(data.created_at);
         const now = new Date();
@@ -105,7 +113,7 @@ export default function ProfilePage() {
     } catch (err) {
       console.error(err);
     }
-  };
+  }, [userToken]);
 
   const handleUpdateEmail = async () => {
     setUpdatingEmail(true);
@@ -125,7 +133,7 @@ export default function ProfilePage() {
       if (!res.ok) throw new Error("Failed to update email");
       setEmail(newEmail);
       setIsEditingEmail(false);
-    } catch (err) {
+    } catch {
       setError("Failed to update email. Please try again.");
     } finally {
       setUpdatingEmail(false);
@@ -183,7 +191,7 @@ export default function ProfilePage() {
     }
     fetchMyProfile().then(() => setLoading(false));
     fetchNotesCount().then(() => setLoading(false));
-  }, []);
+  }, [userToken, fetchMyProfile, fetchNotesCount]);
 
   if (loading) {
     return <LoadingOverlay loading={true} />;

@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import {
   Container,
   Typography,
@@ -27,8 +27,6 @@ import {
   PushPin,
   Share,
   Search,
-  // @ts-ignore
-  Info,
   Edit,
   Add,
   ArrowUpward,
@@ -116,7 +114,7 @@ export default function NotesPage() {
   const navigate = useNavigate();
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const fetchNotes = async (search?: string, filter?: string) => {
+  const fetchNotes = useCallback(async (search?: string, filter?: string) => {
     setLoading(true);
     try {
       const params = new URLSearchParams();
@@ -140,7 +138,7 @@ export default function NotesPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [navigate, token]);
 
   useEffect(() => {
     let pollingInterval: NodeJS.Timeout;
@@ -198,7 +196,7 @@ export default function NotesPage() {
         clearInterval(pollingInterval);
       }
     };
-  }, [isLoggedIn, notes]);
+  }, [isLoggedIn, notes, navigate, token]);
 
   const applyTagFilter = () => {
     fetchNotes(searchQuery, tagFilter);
@@ -408,7 +406,6 @@ export default function NotesPage() {
     }
   }, [detailNote]);
 
-  // @ts-ignore
   const handleToggleEdit = () => {
     setEditMode((prev) => !prev);
   };
@@ -514,7 +511,7 @@ export default function NotesPage() {
     } else {
       fetchNotes("", tagFilter);
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, navigate, fetchNotes, tagFilter]);
 
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
@@ -526,40 +523,36 @@ export default function NotesPage() {
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [searchQuery]);
+  }, [searchQuery, fetchNotes, isLoggedIn, tagFilter]);
 
   const [username, setUsername] = useState("");
-  const [quote, setQuote] = useState("");
-
-  const quotes = [
-    "“The best way to predict the future is to create it.” – Abraham Lincoln",
-    "“Your time is limited, so don’t waste it living someone else’s life.” – Steve Jobs",
-    "“Success usually comes to those who are too busy to be looking for it.” – Henry David Thoreau",
-    "“Don’t be afraid to give up the good to go for the great.” – John D. Rockefeller",
-    "“I find that the harder I work, the more luck I seem to have.” – Thomas Jefferson",
-    "“Success is walking from failure to failure with no loss of enthusiasm.” – Winston Churchill",
-    "“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt",
-    "“It’s not whether you get knocked down, it’s whether you get up.” – Vince Lombardi",
-    "“The way to get started is to quit talking and begin doing.” – Walt Disney",
-    "“The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.” – Winston Churchill",
-    "“Don’t let yesterday take up too much of today.” – Will Rogers",
-    "“You learn more from failure than from success. Don’t let it stop you. Failure builds character.” – Unknown",
-    "“It’s not whether you get knocked down, it’s whether you get up.” – Vince Lombardi",
-    "“People who are crazy enough to think they can change the world, are the ones who do.” – Rob Siltanen",
-    "“Knowing is not enough; we must apply. Wishing is not enough; we must do.” – Johann Wolfgang Von Goethe",
-    "“Whether you think you can or think you can’t, you’re right.” – Henry Ford",
-    "“The only way to do great work is to love what you do.” – Steve Jobs",
-    "“The best time to plant a tree was 20 years ago. The second best time is now.” – Chinese Proverb",
-    "“The best revenge is massive success.” – Frank Sinatra",
-    "“The secret of getting ahead is getting started.” – Mark Twain",
-    "“The best way to get started is to quit talking and begin doing.” – Walt Disney",
-    "“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt",
-  ];
-
-  useEffect(() => {
-    // Select a random quote
-    setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-  }, []);
+  const [quote] = useState(() => {
+    const quotes = [
+      "“The best way to predict the future is to create it.” – Abraham Lincoln",
+      "“Your time is limited, so don’t waste it living someone else’s life.” – Steve Jobs",
+      "“Success usually comes to those who are too busy to be looking for it.” – Henry David Thoreau",
+      "“Don’t be afraid to give up the good to go for the great.” – John D. Rockefeller",
+      "“I find that the harder I work, the more luck I seem to have.” – Thomas Jefferson",
+      "“Success is walking from failure to failure with no loss of enthusiasm.” – Winston Churchill",
+      "“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt",
+      "“It’s not whether you get knocked down, it’s whether you get up.” – Vince Lombardi",
+      "“The way to get started is to quit talking and begin doing.” – Walt Disney",
+      "“The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.” – Winston Churchill",
+      "“Don’t let yesterday take up too much of today.” – Will Rogers",
+      "“You learn more from failure than from success. Don’t let it stop you. Failure builds character.” – Unknown",
+      "“It’s not whether you get knocked down, it’s whether you get up.” – Vince Lombardi",
+      "“People who are crazy enough to think they can change the world, are the ones who do.” – Rob Siltanen",
+      "“Knowing is not enough; we must apply. Wishing is not enough; we must do.” – Johann Wolfgang Von Goethe",
+      "“Whether you think you can or think you can’t, you’re right.” – Henry Ford",
+      "“The only way to do great work is to love what you do.” – Steve Jobs",
+      "“The best time to plant a tree was 20 years ago. The second best time is now.” – Chinese Proverb",
+      "“The best revenge is massive success.” – Frank Sinatra",
+      "“The secret of getting ahead is getting started.” – Mark Twain",
+      "“The best way to get started is to quit talking and begin doing.” – Walt Disney",
+      "“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt",
+    ];
+    return quotes[Math.floor(Math.random() * quotes.length)];
+  });
 
   useEffect(() => {
     const fetchUserData = async () => {

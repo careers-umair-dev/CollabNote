@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 
 import React from "react";
@@ -12,12 +13,12 @@ const mockFetch = vi.fn();
 const mockGetItem = vi.fn();
 const mockSetItem = vi.fn();
 
-global.fetch = mockFetch;
-global.localStorage = {
+vi.stubGlobal("fetch", mockFetch);
+vi.stubGlobal("localStorage", {
   getItem: mockGetItem,
   setItem: mockSetItem,
   removeItem: vi.fn(),
-} as any;
+});
 
 // Wrap component with BrowserRouter for React Router usage
 const renderWithRouter = (component: React.ReactNode) =>
